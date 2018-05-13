@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="BbcNewsTestRunner"
+            prefHeight="400.0" prefWidth="600.0">
+
+</AnchorPane>
+
+
+<suite name="bbcNewsTestRunner" parallel="false">
+
+<parameter name="useCloudEnv" value="false"/>
+<parameter name="cloudEnvName" value="browserstack"/>
+<parameter name="platformName" value="Android"/>
+<parameter name="platformVersion" value="5.1"/>
+<parameter name="deviceName" value="Nexus"/>
+<parameter name="browserVersion" value="53.0"/>
+<parameter name="app" value="C:\Users\prisc\IdeaProjects\MobileAutomationFramework-master\MobileApp\src\app\BBCNews_v5.0.0.15GNL_apkpure.apk"/>
+
+<test name = "testBBCNewsApp">
+    <classes>
+        <class name="testBBCNewsApp.testMoreTopics"/>
+    </classes>
+</test>
+</suite>
